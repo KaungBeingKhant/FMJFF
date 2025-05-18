@@ -1,0 +1,191 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base styling */
+  body {
+    background: #111;
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    color: white;
+  }
+  
+  .outer-container {
+    padding: 30px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .main-container {
+    background: #dcdcdc;
+    border-radius: 40px;
+    padding: 30px;
+    max-width: 1300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  /* Header with deep purple gradient */
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #4a148c 0%, #7b1fa2 100%);
+    border-radius: 25px;
+    padding: 20px 30px;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .logo img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  
+  .text h1 {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .text p {
+    font-size: 12px;
+    color: #ccc;
+  }
+  
+  /* Navigation */
+  .nav {
+    display: flex;
+    gap: 25px;
+    padding: 12px 25px;
+    border-radius: 30px;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: opacity 0.3s;
+  }
+  
+  .nav a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Main layout */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  
+  .left {
+    flex: 1 1 60%;
+    padding: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .right {
+    flex: 1 1 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .page-content {
+    flex: 1 1 100%;
+    padding: 30px;
+    border-radius: 30px;
+  }
+  
+  /* Glassmorphism style */
+  .glass {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  }
+  
+  /* Buttons */
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .btn-container button, 
+  .right button {
+    font-size: 18px;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    color: #4a148c;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .btn-container button:hover,
+  .right button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Content styles */
+  h2 {
+    margin-bottom: 20px;
+    color: #4a148c;
+    font-size: 26px;
+  }
+  
+  .quote {
+    font-size: 20px;
+    line-height: 2;
+    text-align: center;
+  }
+  
+  .english {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .info-item {
+    margin-bottom: 15px;
+  }
+  
+  .info-item strong {
+    color: #7b1fa2;
+  }
+  
+  /* Responsive */
+  @media (max-width: 900px) {
+    main {
+      flex-direction: column;
+    }
+  
+    .nav {
+      gap: 15px;
+      padding: 10px 15px;
+    }
+    
+    .right button,
+    .btn-container button {
+      width: 100%;
+    }
+  }
